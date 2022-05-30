@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>Weather Project</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div id="postalcode-header">
+      <img
+        src="https://images2.alphacoders.com/441/441503.jpg"
+        alt="postalcode-header"
+      />
+    </div>
+
+    <div class="container">
+      <form class="add-city-form">
+        <h3>Search A New City</h3>
+
+        <input
+          type="text"
+          name="name"
+          value=""
+          placeholder="Enter a city's postal code"
+          class="input-text"
+        />
+        <br />
+        <input
+          type="submit"
+          name="submit"
+          value="Search Postal Code"
+          class="submit"
+        />
+      </form>
+    </div>
+    <p style="text-align:center">
+      Search a Postal Code to Get City Information: <br>
+      <button id="new-city-btn">Search a New City!</button>
+    </p>
+
+    <div id="city-collection"></div>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>

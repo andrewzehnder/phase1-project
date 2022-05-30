@@ -1,0 +1,15 @@
+//   "region": "Phoenix, AZ",
+//   "currentConditions": {
+//     "dayhour": "Tuesday 1:00 PM",
+//     "temp": {
+//       "c": 36,
+//       "f": 96
+//     },
+//     "precip": "0%",
+//     "humidity": "6%",
+//     "wind": {
+//       "km": 16,
+//       "mile": 10
+//     },
+//     "iconURL": "https://ssl.gstatic.com/onebox/weather/64/sunny.png",
+//     "comment": "Sunny"
