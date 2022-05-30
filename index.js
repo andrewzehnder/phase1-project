@@ -1,3 +1,5 @@
+let inputcode = "85001"
+
 //Add New Card
 
 let addCity = false;
@@ -21,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
 let addCard = document.querySelector('#city-collection')
 
 function fetchCity() {
-  fetch("https://api.zippopotam.us/us/85001")
+  fetch(`https://api.zippopotam.us/us/${inputcode}`)
   .then(response => response.json())
   .then(city => createCityCard(city))
   }
