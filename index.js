@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 function createCityCard(city) {
-    console.log("here", city)
+    console.log("city data", city)
 
   const card = document.createElement('div');
   card.className = 'card';
