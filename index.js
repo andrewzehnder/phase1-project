@@ -1,5 +1,3 @@
-let inputcode = "85001"
-
 //Add New Card
 
 let addCity = false;
@@ -23,9 +21,11 @@ document.addEventListener("DOMContentLoaded", () => {
 let addCard = document.querySelector('#city-collection')
 
 function fetchCity() {
-  fetch(`https://api.zippopotam.us/us/${inputcode}`)
+  fetch("http://localhost:3000/cities")
   .then(response => response.json())
-  .then(city => createCityCard(city))
+  .then(cities => 
+    cities.forEach (cities => createCityCard(cities))
+    )
   }
 
 
@@ -34,7 +34,12 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-function createCityCard(city) {
+function createCityCard(cities) {
+  let inputcode = cities.inputcode 
+
+  fetch(`https://api.zippopotam.us/us/${inputcode}`)
+  .then(resp => resp.json())
+  .then(city => {
     console.log("city data", city)
 
   const card = document.createElement('div');
@@ -58,13 +63,27 @@ function createCityCard(city) {
   card.appendChild(p3);
 
   addCard.appendChild(card);
+    })
 }
 
 //Add City to List
 
-document.querySelector('form').addEventListener('submit', (e) => SubmitForm )
+document.querySelector('form').addEventListener('submit', (e) => {
 
-function SubmitForm(e) {
-    e.preventDefault();
-    console.log(e)
-}
+const formData = {
+    inputcode: e.target[0].value,
+  }
+  
+  const addNewCityPost = {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+      'Accept': 'application/json',
+      },
+    body: JSON.stringify(formData) 
+  }
+  
+  fetch('http://localhost:3000/cities', addNewCityPost)
+  .then(response => response.json())
+  .then(createCityCard)
+})
