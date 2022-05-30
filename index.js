@@ -59,3 +59,12 @@ function createCityCard(city) {
 
   addCard.appendChild(card);
 }
+
+//Add City to List
+
+document.querySelector('form').addEventListener('submit', (e) => SubmitForm )
+
+function SubmitForm(e) {
+    e.preventDefault();
+    console.log(e)
+}
