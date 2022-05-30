@@ -73,6 +73,8 @@ document.querySelector('form').addEventListener('submit', (e) => {
 const formData = {
     inputcode: e.target[0].value,
   }
+
+  //ASK QUESTION: WHY DOES IT ADD THE ID LAST??
   
   const addNewCityPost = {
     method: 'POST',
