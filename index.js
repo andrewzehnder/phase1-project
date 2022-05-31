@@ -47,6 +47,7 @@ function createCityCard(cities) {
 
   const h2 = document.createElement('h2');
   h2.textContent = `${city.places[0]["place name"]}, ${city.places[0]["state abbreviation"]}`;
+  h2.id = `h2 ${city.places[0]["place name"]}, ${city.places[0]["state abbreviation"]}`
 
   const p1 = document.createElement('p1');
   p1.textContent = `Postal Code: ${city["post code"]}`
@@ -79,14 +80,15 @@ function createCityCard(cities) {
 
 //mouseOver Actions
 
-function mouseOver() {
-    document.getElementsByName("h2").backgroundColor = "yellow";
+function mouseOver(e) {
+    let h2 = document.getElementById(e.path[0].id) 
+    h2.style.color = "yellow"
 }
 
 // //mouseOut Actions
 
 function mouseOut() {
-    document.getElementsByName("h2").backgroundColor = "white";
+    document.getElementById("h2").backgroundColor = "white";
 }
 
 //Add City to List
