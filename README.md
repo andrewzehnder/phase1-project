@@ -33,3 +33,7 @@ American flag picture used from Alpha Coders (https://www.alphacoders.com): http
 ## Video Walk-Through
 
 https://youtu.be/xnmOEA25DfM 
+
+## Blog on API JSON Server 
+
+https://medium.com/@azehnder2/adding-items-to-api-json-server-6f515d238c7c 
