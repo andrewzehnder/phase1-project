@@ -9,7 +9,7 @@ body {
     justify-content: center;
     background: white;
     opacity: .8;
-    height: 7rem;
+    height: 8rem;
     padding: 1rem;
   }
   
@@ -53,8 +53,8 @@ body {
   
   button:hover {
     background-color: whitesmoke;
-    border: #e04b52 solid 1px;
-    color: #e04b52;
+    border: #af131a solid 1px;
+    color: #af131a;
   }
   
   .container {
@@ -85,8 +85,8 @@ body {
   
   .submit:hover {
     background-color: whitesmoke;
-    border: #e04b52 solid 1px;
-    color: #e04b52;
+    border: #af131a solid 1px;
+    color: #af131a;
   }
   
   
