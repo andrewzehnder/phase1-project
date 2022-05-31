@@ -68,7 +68,7 @@ function createCityCard(cities) {
   card.appendChild(p1);
   card.appendChild(p2);
   card.appendChild(p3);
-  card.appendChile(button);
+  card.appendChild(button);
 
   addCard.appendChild(card);
     })

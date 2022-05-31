@@ -1,12 +1,3 @@
 {
-  "cities": [
-    {
-      "id": 1,
-      "inputcode": "85001"
-    },
-    {
-      "inputcode": "85024",
-      "id": 2
-    }
-  ]
+  "cities": []
 }
