@@ -39,7 +39,6 @@ function createCityCard(cities) {
   fetch(`https://api.zippopotam.us/us/${inputcode}`)
   .then(resp => resp.json())
   .then(city => {
-    console.log("city data", city)
 
   const card = document.createElement('div');
   card.className = 'card';
