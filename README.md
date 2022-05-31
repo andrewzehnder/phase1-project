@@ -29,3 +29,7 @@ After searching for a given postal code, you may leave them on the page, or remo
 ## Acknowledgement
 
 American flag picture used from Alpha Coders (https://www.alphacoders.com): https://images2.alphacoders.com/441/441503.jpg
+
+## Video Walk-Through
+
+https://youtu.be/xnmOEA25DfM 
