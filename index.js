@@ -80,8 +80,13 @@ function createCityCard(cities) {
 //mouseOver Actions
 
 function mouseOver(e) {
-    console.log(e)
     document.getElementById(e.target.id).style.backgroundColor = "yellow";
+}
+
+//mouseOut Actions
+
+function mouseOver(e) {
+    document.getElementById(e.target.id).style.backgroundColor = "white";
 }
 
 //Add City to List
