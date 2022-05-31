@@ -73,6 +73,7 @@ function createCityCard(cities) {
   addCard.appendChild(card);
 
   card.addEventListener("mouseover", mouseOver)
+  card.addEventListener("mouseout", mouseOut)
     })
 }
 
