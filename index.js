@@ -72,21 +72,21 @@ function createCityCard(cities) {
 
   addCard.appendChild(card);
 
-  card.addEventListener("mouseover", mouseOver)
-  card.addEventListener("mouseout", mouseOut)
+  h2.addEventListener("mouseover", mouseOver)
+  h2.addEventListener("mouseout", mouseOut)
     })
 }
 
 //mouseOver Actions
 
-function mouseOver(e) {
-    document.getElementById(e.target.id).style.backgroundColor = "yellow";
+function mouseOver() {
+    document.getElementsByName("h2").backgroundColor = "yellow";
 }
 
 // //mouseOut Actions
 
-function mouseOut(e) {
-    document.getElementById(e.target.id).style.backgroundColor = "white";
+function mouseOut() {
+    document.getElementsByName("h2").backgroundColor = "white";
 }
 
 //Add City to List
