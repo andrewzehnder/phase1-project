@@ -1,12 +1,16 @@
 {
   "cities": [
     {
-      "inputcode": "85123",
-      "id": 5
+      "inputcode": "90210",
+      "id": 1
     },
     {
-      "inputcode": "85024",
-      "id": 6
+      "inputcode": "85001",
+      "id": 2
+    },
+    {
+      "inputcode": "68135",
+      "id": 3
     }
   ]
 }

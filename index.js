@@ -80,14 +80,15 @@ function createCityCard(cities) {
 //mouseOver Actions
 
 function mouseOver(e) {
-    let h2 = document.getElementById(e.path[0].id) 
+    console.log(e)
+    let h2 = document.getElementById(e.target.id) 
     h2.style.color = "blue"
 }
 
 // //mouseOut Actions
 
 function mouseOut(e) {
-    let h2 = document.getElementById(e.path[0].id) 
+    let h2 = document.getElementById(e.target.id) 
     h2.style.color = "black"
 }
 
