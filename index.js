@@ -62,7 +62,9 @@ function createCityCard(cities) {
   button.id = cities.id;
   button.innerText = 'Remove'
 
-  button.addEventListener('click', removePostalCode(cities))
+  console.log(button.id)
+
+  button.addEventListener('click', removePostalCode)
 
   card.appendChild(h2);
   card.appendChild(p1);
@@ -96,7 +98,7 @@ const formData = {
   .then(createCityCard)
 })
 
-//Remove a Card
+// Remove a Card
 
 function removePostalCode(cities) {
     let id = cities.id
