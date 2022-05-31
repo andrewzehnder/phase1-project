@@ -114,5 +114,5 @@ function removePostalCode(cities) {
 
     fetch(`http://localhost:3000/cities/${id}`, deletePostalCode)
     .then(response => response.json())
-    .then(data => console.log(data))
+    .then(window.location.reload())
 }
