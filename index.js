@@ -62,7 +62,7 @@ function createCityCard(cities) {
   button.id = cities.id;
   button.innerText = 'Remove'
 
-  button.addEventListener('click', removePostalCode)
+  button.addEventListener('click', removePostalCode(cities))
 
   card.appendChild(h2);
   card.appendChild(p1);
@@ -95,3 +95,21 @@ const formData = {
   .then(response => response.json())
   .then(createCityCard)
 })
+
+//Remove a Card
+
+function removePostalCode(cities) {
+    let id = cities.id
+
+    const deletePostalCode = {
+        method: 'DELETE',
+    headers: {
+      'Content-Type': 'application/json',
+      'Accept': 'application/json',
+      }
+    }
+
+    fetch(`http://localhost:3000/cities/${id}`, deletePostalCode)
+    .then(response => response.json())
+    .then(data => console.log(data))
+}
