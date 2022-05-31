@@ -62,8 +62,6 @@ function createCityCard(cities) {
   button.id = cities.id;
   button.innerText = 'Remove'
 
-  console.log(button.id)
-
   button.addEventListener('click', removePostalCode)
 
   card.appendChild(h2);
