@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-//Fetch Weather - Phoenix Defaulted
+//Fetch Weather - Phoenix Defaulted in db.json
 
 let addCard = document.querySelector('#city-collection')
 
@@ -57,10 +57,18 @@ function createCityCard(cities) {
   const p3 = document.createElement('p3');
   p3.textContent = `Country: ${city.country}`
 
+  const button = document.createElement('button');
+  button.className = 'remove';
+  button.id = cities.id;
+  button.innerText = 'Remove'
+
+  button.addEventListener('click', removePostalCode)
+
   card.appendChild(h2);
   card.appendChild(p1);
   card.appendChild(p2);
   card.appendChild(p3);
+  card.appendChile(button);
 
   addCard.appendChild(card);
     })
