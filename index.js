@@ -43,6 +43,7 @@ function createCityCard(cities) {
 
   const card = document.createElement('div');
   card.className = 'card';
+  card.id = cities.id
 
   const h2 = document.createElement('h2');
   h2.textContent = `${city.places[0]["place name"]}, ${city.places[0]["state abbreviation"]}`;
@@ -58,7 +59,7 @@ function createCityCard(cities) {
 
   const button = document.createElement('button');
   button.className = 'remove';
-  button.id = cities.id;
+  button.id = `Remove: ${cities.id}`;
   button.innerText = 'Remove'
 
   button.addEventListener('click', removePostalCode)
@@ -77,8 +78,9 @@ function createCityCard(cities) {
 
 //mouseOver Actions
 
-function mouseOver() {
-    document.getElementsByClassName("card").style.color = "yellow";
+function mouseOver(e) {
+    console.log(e)
+    // document.getElementsByID(e).style.backgroundColor = "yellow";
 }
 
 //Add City to List
