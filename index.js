@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const addBtn = document.querySelector("#new-city-btn");
   const cityFormContainer = document.querySelector(".container");
   addBtn.addEventListener("click", () => {
-    // hide & seek with the form
     addCity = !addCity;
     if (addCity) {
       cityFormContainer.style.display = "block";
@@ -71,8 +70,11 @@ function createCityCard(cities) {
   card.appendChild(button);
 
   addCard.appendChild(card);
+
+  card.addEventListener("mouseover", mouseOver)
     })
 }
+
 
 //Add City to List
 
@@ -114,3 +116,4 @@ function removePostalCode(cities) {
     .then(response => response.json())
     .then(window.location.reload())
 }
+
