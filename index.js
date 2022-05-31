@@ -101,7 +101,8 @@ const formData = {
 // Remove a Card
 
 function removePostalCode(cities) {
-    let id = cities.id
+    let id = cities.target.id
+    console.log(id, cities)
 
     const deletePostalCode = {
         method: 'DELETE',
