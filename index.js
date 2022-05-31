@@ -75,6 +75,11 @@ function createCityCard(cities) {
     })
 }
 
+//mouseOver Actions
+
+function mouseOver() {
+    document.getElementsByClassName("card").style.color = "yellow";
+}
 
 //Add City to List
 
